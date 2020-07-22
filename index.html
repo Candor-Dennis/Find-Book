@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="BOOTSTRAP/css/bootstrap.css">
+		<title>BOOK API FETCH</title>
+	</head>
+	<body class="container">
+
+
+		<div class="text-center text-success mt-5">
+			<h1>FIND BOOK!</h1>
+			<span>(Search made easy!)</span>
+			<p>Search for any book, its author, and description</p>
+		</div>
+		
+		<div class="col-md-4 offset-md-4">
+			<div class="input-group mb-3">
+
+			  <input class="form-control" type="text"id="book" onchange="find()">	
+
+			  <div class="input-group-append">
+			   		<button class="btn btn-success" onclick="find()">Search</button>
+			  </div>
+
+			</div>
+		</div>
+		
+		
+
+		<div id="books"></div>
+
+
+		<script type="text/javascript" src="fetch.js"></script>
+		<script type="text/javascript" src="BOOTSTRAP/js/bootstrap.js"></script>
+
+	</body>
+</html>
